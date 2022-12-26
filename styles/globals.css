@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #f0e7db;
+}
+
+@layer components {
+  /** Login Page **/
+  .loginContainer {
+    @apply absolute w-[920px] h-[540px] left-[210px] top-[50px]
+    rounded-2xl bg-[#F9F2EB] shadow-2xl;
+  }
+
+  .form-container {
+    @apply absolute top-0 h-full;
+  }
+
+  .login-container {
+    @apply left-0 w-1/2 z-[2];
+  }
+
+  .login-inputText {
+    @apply absolute font-sans bg-[#F9F2EB] text-[#2D2D2D]
+    pl-6 box-border h-[54px] w-[345px] border border-solid
+    border-[#2D2D2D] rounded-md mx-[-68px];
+  }
+
+  .login-inputPass {
+    @apply absolute font-sans bg-[#F9F2EB] text-[#2D2D2D]
+    pl-6 box-border h-[54px] w-[345px] border border-solid
+    border-[#2D2D2D] rounded-md my-20 mx-[-68px];
+  }
+
+  .input-button-log {
+    @apply absolute font-sans font-bold text-xs rounded-lg
+    border-none bg-[#34a67d] text-[#F9F2EB] py-3 px-11
+    uppercase mt-[154px] mx-[-44px] hover:bg-[#50D1A3]
+    hover:cursor-pointer;
+  }
+
+  .input-button-reg {
+    @apply font-sans font-bold text-xs rounded-lg border-none
+    bg-[#2D2D2D] text-[#F9F2EB] py-3 px-11 uppercase
+    mt-[154px] mx-[104px] hover:bg-[#424141] hover:cursor-pointer;
+  }
+
+  .overlay-container {
+    @apply absolute top-0 w-1/2 h-full left-1/2;
+  }
+
+  .overlay {
+    @apply absolute w-[468px] h-[540px] top-[-1px] bg-gradient-to-r
+    from-[#F2E1CB] to-[#F0E7DB] rounded-r-2xl;
+  }
+
+  .overlay-panel {
+    @apply absolute flex items-center justify-center flex-col px-10
+           text-center left-[100px] h-full w-1/2;
+  }
+
+  /** Register **/
+  .regContainer {
+    @apply absolute w-[994px] h-[584px] left-[168px] top-[54px]
+    bg-[#F9F2EB] shadow-xl rounded-3xl;
+  }
+
+  .doggy {
+    @apply absolute left-[548px] top-[54px];
+  }
+
+  .craftypug-doggy {
+    @apply absolute left-[748px] top-[464px];
+  }
+
+  .reg-inputText {
+    @apply absolute font-sans bg-[#F9F2EB] text-[#2D2D2D]
+    pl-6 box-border h-[54px] w-[345px] border border-solid
+    border-[#2D2D2D] rounded-md top-[168px] left-8;
+  }
+
+  .reg-inputPass {
+    @apply absolute font-sans bg-[#F9F2EB] text-[#2D2D2D]
+    pl-6 box-border h-[54px] w-[345px] border border-solid
+    border-[#2D2D2D] rounded-md top-[234px] left-8;
+  }
+
+  .reg-inputUser {
+    @apply absolute font-sans bg-[#F9F2EB] text-[#2D2D2D]
+    pl-6 box-border h-[54px] w-[345px] border border-solid
+    border-[#2D2D2D] rounded-md top-[294px] left-8;
+  }
+
+  .reg-inputDone {
+    @apply absolute font-sans border-none bg-[#34A67D] py-2 px-5 
+    rounded-lg ml-8 text-[#F9F2EB] hover:bg-[#50D1A3]
+    hover:cursor-pointer;
+  }
+
+  .reg-inputBack {
+    @apply absolute font-sans border-none bg-[#2D2D2D] py-2 px-5 
+    rounded-lg ml-32 text-[#F9F2EB] hover:bg-[#424141]
+    hover:cursor-pointer;
+  }
+}
